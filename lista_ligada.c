@@ -20,7 +20,7 @@ void percorre(no **L){
             C = C->next;
         }
         else
-            C =  
+            C =  Null;
     }while(C);
 }
 
