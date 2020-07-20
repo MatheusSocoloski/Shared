@@ -1,13 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
 int main(){
-    int N, a , b, c, d;
+    int V[4];
     cout << "Digite o numero de 4 digitos ";
-    cin >> N;
-        a = N%10;
-b = (N%100)/10;
-c = (N%1000)/100;
-d = N/1000;
-if((a == d) && (b == c))
-            cout << "e uma capicua";
-        else
-            cout << "nao e uma capicua";
+    cin >> V[4];
+
+    V[0] = V[4]%10;
+    V[1] = (V[4]%100)/10;
+    V[2] = (V[4]%1000)/100;
+    V[3] = V[4]/1000;
+
+    if((V[0] == V[3]) && (V[1] == V[2]))
+        cout << "e uma capicua" << endl;
+    else
+        cout << "nao e uma capicua" << endl;
 }
+
